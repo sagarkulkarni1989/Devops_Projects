@@ -22,9 +22,12 @@
 
 # Infrastructure  Setup 
 1. AWS - EC2 Instances : Type: Ubuntu 20.04  t2.medium , security group - inbound rules: all trafic for anywhere.  access key etc
-2. enkins setup: 
-3. SonarQube
-4. Nexus: 
+2. jenkins setup: 
+      * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/jenkins.sh
+      * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/docker.sh
+	  
+3. SonarQube(you can create dedicated VM or use same Jenkins VM):https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/sonarqube.sh
+4. Nexus: https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/Nexus.sh
 
 # Access all through console 
 1. Jenkins : http://<public_IP>:8080
@@ -42,3 +45,19 @@ Configuration :
 	    - docker and docker-pipeline 
 	    - nexus-artifact-uploader
 	    - pipeline-utility-steps
+    - Manage Jenkins - Manage Credentials
+  		 - Sonar-token   	 kind:secret text   	 ID:sonar-token
+	         -  for nexus   Kind: Username and password
+		 - for dockerhub  kind:secret text   ID: git_creds     (Dockerhub credentials)
+2. SonarQube Webhook:
+	- Administration - configurations- webhooks
+	- name: jenkins-webhook     URL:http://3.108.64.16:8080/sonarqube-webhook/  <jenkins public_IP:8080>/
+3. Configure Sonarqube Server:
+	- Manage Jenkins - Configure System - sonarqube server
+4. Nexus Repository Creation:
+	- maven hosted2 = 1] release 2] snapshot
+	
+
+![image](https://user-images.githubusercontent.com/46215433/219878271-4ab530d7-9cf8-4f6d-b5b9-d988bd85ad25.png)
+![image](https://user-images.githubusercontent.com/46215433/219878288-ca13f5d8-8b38-47b2-b467-d7836f10e653.png)
+
