@@ -1,6 +1,7 @@
 Project#1 Continuous Integration 
 
-Tools
+*Tools
+	- Nested bullet
 	- AWS - Security Group, EC2
 	- Source Code Management:Git
 	- CI/CD : Jenkins 
