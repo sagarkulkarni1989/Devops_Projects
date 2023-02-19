@@ -6,6 +6,7 @@
 * Visual Studio Code
 * GitHub Account
 * DockerHub Account
+* Application Source code repo: https://github.com/sagarkulkarni1989/mrdevops_nexus_helm_cicd_app.git
 
 # Tools
 1. AWS - Security Group, EC2
@@ -63,8 +64,16 @@
 3. Configure Sonarqube Server:
 	- Manage Jenkins - Configure System - sonarqube server
 4. Nexus Repository Creation:
-	- maven hosted2 = 1] release 2] snapshot
+	- maven hosted2 = 1] release 2] snapshot   AppName: 1. demoapp-snapshot 2. demoapp-release
+5. Generate Sonarqube Token: Administration – Security – Users  (Use this token while creating sonar-token Jenkins credentials)
 	
+# Reference snapshots:
+* Sonarqube Server configuration in Jenkins 
+![image](https://user-images.githubusercontent.com/46215433/219933058-7aaac154-5728-48be-87d3-e771971d18a1.png)
+
+* Sonarqube webhook setup 
+![image](https://user-images.githubusercontent.com/46215433/219933086-4b277da0-fbcf-4afe-8ac9-461917763b90.png)
+
 
 * Troubleshooting during implementation 
 * Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get      http://%2Fvar%2Frun%2Fdocker.sock/v1.26/containers/hello-world/json: dial unix /var/run/docker.sock: connect: permission denied.
