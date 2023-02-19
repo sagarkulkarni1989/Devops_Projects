@@ -7,6 +7,7 @@
 * GitHub Account
 * DockerHub Account
 * Application Source code repo: https://github.com/sagarkulkarni1989/mrdevops_nexus_helm_cicd_app.git
+				- https://github.com/sagarkulkarni1989/demo-counter-app.git
 
 # Tools
 1. AWS - Security Group, EC2
