@@ -1,4 +1,11 @@
 ## Project 1 Continuous Integration 
+![image](https://user-images.githubusercontent.com/46215433/219878271-4ab530d7-9cf8-4f6d-b5b9-d988bd85ad25.png)
+
+# Pre-requisite #
+* AWS Account
+* Visual Studio Code
+* GitHub Account
+* DockerHub Account
 
 # Tools
 1. AWS - Security Group, EC2
@@ -25,6 +32,7 @@
 2. jenkins setup: 
       * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/jenkins.sh
       * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/docker.sh
+      * Install Maven on Jenkins VM
 	  
 3. SonarQube(you can create dedicated VM or use same Jenkins VM):https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/sonarqube.sh
 4. Nexus: https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/Nexus.sh
@@ -34,7 +42,7 @@
 2. SonarQube: http://<public_IP>:9000
 3. Nexus: http://<Public_IP>:8081
 
-Configuration : 
+# Configuration #
 1. On Jenkins console
     - Manage Jenkins - Manage Plugins
     	- SonarQube Scanner
@@ -58,6 +66,9 @@ Configuration :
 	- maven hosted2 = 1] release 2] snapshot
 	
 
-![image](https://user-images.githubusercontent.com/46215433/219878271-4ab530d7-9cf8-4f6d-b5b9-d988bd85ad25.png)
+* Troubleshooting during implementation 
+* Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get      http://%2Fvar%2Frun%2Fdocker.sock/v1.26/containers/hello-world/json: dial unix /var/run/docker.sock: connect: permission denied.
+WA: https://www.edureka.co/community/7764/trying-docker-jenkins-pipeline-facing-jenkins-pipeline-socket
+
 ![image](https://user-images.githubusercontent.com/46215433/219878288-ca13f5d8-8b38-47b2-b467-d7836f10e653.png)
 
