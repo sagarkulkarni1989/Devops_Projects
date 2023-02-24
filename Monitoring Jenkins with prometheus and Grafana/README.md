@@ -48,7 +48,19 @@
 	- Add your first Data Source
 	- Select Prometheus
 	- URL: Prometheus URL and save and test
+	
 	![image](https://user-images.githubusercontent.com/46215433/221116310-89c12129-6f7d-4e95-8169-e07454ed6e87.png)
+	
+	- Create your first dashboard
+	- Add new panel
+	- Select Query patterns : Jenkins_plugin_active
+	- Select Visualizations: stat  and provide dashboard name and save it
+	
+	![image](https://user-images.githubusercontent.com/46215433/221117162-65eb0ea4-291c-4bb1-a5d6-a70cffb546ec.png)
+	![image](https://user-images.githubusercontent.com/46215433/221117227-5dadb4b6-4b47-4eb7-a390-1a7fed7e1565.png)
+
+
+
 
 	
 
