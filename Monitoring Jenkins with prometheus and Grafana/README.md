@@ -42,7 +42,14 @@
     		  - metrics_path: /prometheus
     static_configs:
       - targets: ["13.127.25.100:9090"]
-5. Grafana setup – Security – 
+      ![image](https://user-images.githubusercontent.com/46215433/221115509-a9b07705-811b-4d19-83cd-b166edb5792f.png)
+
+5. Grafana setup – 
+	- Add your first Data Source
+	- Select Prometheus
+	- URL: Prometheus URL and save and test
+	![image](https://user-images.githubusercontent.com/46215433/221116310-89c12129-6f7d-4e95-8169-e07454ed6e87.png)
+
 	
 
 
