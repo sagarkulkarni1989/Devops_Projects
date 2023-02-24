@@ -46,7 +46,14 @@
               - targets: ["3.110.45.128:9100", "43.204.227.151:9100"]
 
 	```
-	
+2. Grafana setup on Amazon Linux (https://grafana.com/grafana/download)
+	- wget https://dl.grafana.com/enterprise/release/grafana-enterprise-9.3.6.linux-amd64.tar.gz
+	- tar -zxvf grafana-enterprise-9.3.6.linux-amd64.tar.gz
+	- ./bin/grafana-server	
+	- Access grafana through console http://<Public-IP>:3000
+	- Add your first Data Source
+	- Select Prometheus
+	- URL: Prometheus URL and save and test
 
       ![image](https://user-images.githubusercontent.com/46215433/221115509-a9b07705-811b-4d19-83cd-b166edb5792f.png)
 
@@ -67,6 +74,8 @@
 	![image](https://user-images.githubusercontent.com/46215433/221117426-984689dc-760a-4cce-a01f-07be1fca425f.png)
 	
 	![image](https://user-images.githubusercontent.com/46215433/221153371-e25c8ea5-490c-40c7-8331-206383d63528.png)
+
+	![image](https://user-images.githubusercontent.com/46215433/221180028-0d14817c-34fa-4cd8-85b9-387a33d14a1a.png)
 
 	
 
