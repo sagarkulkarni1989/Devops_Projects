@@ -13,8 +13,8 @@
 4. Containerization : Docker 
 
 # Infrastructure  Setup 
-1. AWS - EC2 Instances : Type: Ubuntu 20.04  t2.medium , security group - inbound rules: all trafic for anywhere.  access key etc
-2. jenkins setup: 
+1. AWS - EC2 Instances : Type: Ubuntu 20.04 and amazon Linux  t2.micro , security group - inbound rules: all trafic for anywhere.  access key etc
+2. Prometheus setup: 
       * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/jenkins.sh
       * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/docker.sh
  
