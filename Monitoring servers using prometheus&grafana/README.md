@@ -59,6 +59,20 @@
 	![image](https://user-images.githubusercontent.com/46215433/221117162-65eb0ea4-291c-4bb1-a5d6-a70cffb546ec.png)
 	![image](https://user-images.githubusercontent.com/46215433/221117227-5dadb4b6-4b47-4eb7-a390-1a7fed7e1565.png)
 	![image](https://user-images.githubusercontent.com/46215433/221117426-984689dc-760a-4cce-a01f-07be1fca425f.png)
+	
+	![image](https://user-images.githubusercontent.com/46215433/221153371-e25c8ea5-490c-40c7-8331-206383d63528.png)
+
+	```
+	  - job_name: "prometheus"
+   	    static_configs:
+              - targets: ["localhost:9090"]
+         - job_name: "node_exporter"
+           static_configs:
+              - targets: ["3.110.45.128:9100", "43.204.227.151:9100"]
+
+	```
+	
+	
 
 
 
