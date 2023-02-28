@@ -1,4 +1,4 @@
-## Project 1 Monitoring Jenkins with Prometheus and Grafana
+## Project 1 Monitoring servers using Prometheus and Grafana
 
 
 # Pre-requisite #
@@ -8,16 +8,19 @@
 
 # Tools
 1. AWS - Security Group, EC2
-2. CI/CD : Jenkins 
-3. Monitoring Tool : Prometheus and Grafana
-4. Containerization : Docker 
+2. Monitoring Tool : Prometheus and Grafana
+
 
 # Infrastructure  Setup 
-1. AWS - EC2 Instances : Type: Ubuntu 20.04  t2.medium , security group - inbound rules: all trafic for anywhere.  access key etc
-2. jenkins setup: 
-      * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/jenkins.sh
-      * https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Project1Continuous_Integration/docker.sh
- 
+1. AWS - EC2 Instances : Type: Ubuntu 20.04 and amazon Linux  t2.micro , security group - inbound rules: all trafic for anywhere.  access key etc
+2. Prometheus setup on Amazon Linux: 
+      * wget https://github.com/prometheus/prometheus/releases/download/v2.37.6/prometheus-2.37.6.linux-amd64.tar.gz
+      * tar -xvf prometheus-2.37.6.linux-amd64.tar.gz
+      * cd prometheus-2.37.6.linux-amd64
+      * nohup ./prometheus &    or ./prometheus
+      * Node exporter : Install it on both machines, we need to install it all the machine which needs to monitor
+      		* installation: wget https://github.com/prometheus/node_exporter/releases/download/v1.5.0/node_exporter-1.5.0.linux-amd64.tar.gz 
+      		* tar -xvf <XXXX.tar.gz>
 	  
 3. Prometheus and Grafana: 
 	 * docker run -d --name prometheus -p 9090:9090 prom/prometheus
@@ -30,18 +33,28 @@
 3. Grafana: http://<Public_IP>:3000
 
 # Configuration #
-1. On Jenkins console
-    - Manage Jenkins - Manage Plugins
-    	- Prometheus
-
-2. Configure Prometheus
-	- docker exec -it <Container_ID> /bin/sh
+1. Configure Prometheus
 	- cd /etc/prometheus
 	- vi prometheus.yml
-			  - job_name: "jenkins"
-    		  - metrics_path: /prometheus
-    static_configs:
-      - targets: ["13.127.25.100:9090"]
+	
+	```
+	  - job_name: "prometheus"
+   	    static_configs:
+              - targets: ["localhost:9090"]
+         - job_name: "node_exporter"
+           static_configs:
+              - targets: ["3.110.45.128:9100", "43.204.227.151:9100"]
+
+	```
+2. Grafana setup on Amazon Linux (https://grafana.com/grafana/download)
+	- wget https://dl.grafana.com/enterprise/release/grafana-enterprise-9.3.6.linux-amd64.tar.gz
+	- tar -zxvf grafana-enterprise-9.3.6.linux-amd64.tar.gz
+	- ./bin/grafana-server	
+	- Access grafana through console http://<Public-IP>:3000
+	- Add your first Data Source
+	- Select Prometheus
+	- URL: Prometheus URL and save and test
+
       ![image](https://user-images.githubusercontent.com/46215433/221115509-a9b07705-811b-4d19-83cd-b166edb5792f.png)
 
 5. Grafana setup – 
@@ -59,6 +72,12 @@
 	![image](https://user-images.githubusercontent.com/46215433/221117162-65eb0ea4-291c-4bb1-a5d6-a70cffb546ec.png)
 	![image](https://user-images.githubusercontent.com/46215433/221117227-5dadb4b6-4b47-4eb7-a390-1a7fed7e1565.png)
 	![image](https://user-images.githubusercontent.com/46215433/221117426-984689dc-760a-4cce-a01f-07be1fca425f.png)
+	
+	![image](https://user-images.githubusercontent.com/46215433/221153371-e25c8ea5-490c-40c7-8331-206383d63528.png)
+
+	![image](https://user-images.githubusercontent.com/46215433/221180028-0d14817c-34fa-4cd8-85b9-387a33d14a1a.png)
+
+	
 
 
 
