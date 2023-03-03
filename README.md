@@ -12,6 +12,6 @@
 # Technical Stack #
 * Source code management: GIT
 * Build Tool: Maven, Gradle
-* 
+* CI/CD: Jenkins https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Technical_stack/Jenkins/README.md
 
 
