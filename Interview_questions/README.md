@@ -1,9 +1,9 @@
-•	First and foremost question, Rolls and Responsibilities. In short, your daily work approach.
-•	Version of VCS you are using?
-•	How do you create a new user in VCS?
-•	Through which client, have you installed/using VCS? Is it, Apache or some other mode? Explain?
-•	Do you commit DB scripts with your source code as well?
-•	What according to you is a Release? And are you involved in Release process?
+* First and foremost question, Rolls and Responsibilities. In short, your daily work approach.
+* Version of VCS you are using?
+* How do you create a new user in VCS?
+* Through which client, have you installed/using VCS? Is it, Apache or some other mode? Explain?
+* Do you commit DB scripts with your source code as well?
+* What according to you is a Release? And are you involved in Release process?
 •	How do you create a Branch? And can developers create their own branches?
 •	What branching strategy are you following? Explain?
 •	How many folders are you using in your branching strategy? And Why do they required?
