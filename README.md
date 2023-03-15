@@ -21,6 +21,11 @@
 * popular SQL database systems include: Oracle, Microsoft SQL Server, PostgreSQL, MySQL, MariaDB
 * NoSQL Databases (Non-Relational)In contrast to a relational database, a NoSQL database is one that is less structured/confined in format, and thus, allows for more flexibility and adaptability.
 * popular NoSQL databases include: MongoDB, Google Cloud Firestore, Cassandra,Redis, Amazon DynamoDB
+* Type of NoSQL Databse
+      * Document-based databases
+      * Key-value stores
+      * Column-oriented databases
+      * Graph-based databases
 
 
 
