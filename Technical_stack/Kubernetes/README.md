@@ -61,7 +61,8 @@ spec:
 
 * DaemonSet: DaemonSets are an integral part of the Kubernetes cluster facilitating administrators to easily configure services (pods) across all or a subset of nodes.
 * DaemonSet Reference: https://www.bmc.com/blogs/kubernetes-daemonset/
-
+* Liveness Probes: Used to check if the container is available and alive. Readiness Probes: Used to check if the application is ready to use and serve the traffic.
+* Liveness probes determine whether or not an application running in a container is in a healthy state. If the liveness probe detects an unhealthy state, then Kubernetes kills the container and tries to redeploy it.
 * Docker vs Docker compose vs docker swarm vs kubernetes
 * stateless applications don’t “store” data. On the other hand, stateful applications require backing storage. For example, applications like the Cassandra, MongoDB, and MySQL databases require some type of persistent storage to survive service restarts.
 * Reference: https://www.weka.io/blog/cloud-storage/stateless-vs-stateful-kubernetes/
