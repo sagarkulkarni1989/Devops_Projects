@@ -5,10 +5,7 @@
 * Minikube installation
 * Service account:A service account provides an identity for processes that run in a Pod, and maps to a ServiceAccount object. It is used to authenticate machine level processes to get access to our Kubernetes cluster. The API server is responsible for such authentication to the processes running in the pod
 * User Account: It is used to allow us, humans, to access the given Kubernetes cluster. Any user needs to get authenticated by the API server to do so. A user account can be an admin or a developer who is trying to access the cluster level resources.
-      
-
 * init container and sidecar container : https://blog.knoldus.com/sidecar-container-vs-init-container-in-kubernetes/
-* configmap, Secrets and Custom Resource definition(CRD)
 * ConfigMap: A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
 * Secrets: A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. Such information might otherwise be put in a Pod specification or in a container image. Using a Secret means that you don't need to include confidential data in your application code.
 * Custom resource definition(CRD): A custom resource is an object that extends the Kubernetes API or allows you to introduce your own API into a project or a cluster. A custom resource definition (CRD) file defines your own object kinds and lets the API Server handle the entire lifecycle.
@@ -18,7 +15,13 @@
 * Pod afinity and pod anti afinity 
 * Adapter container 
 * How to setup scalable jenkins on top of kubernetes cluster 
-* Persistent volume type: NFS in k8s 
+* Persistent volume
+
+![image](https://user-images.githubusercontent.com/46215433/227110931-1e1adf49-da57-4cc2-895d-c59efd26e785.png)
+
+1. Ephemeral Volumes - These are used for applications that need storage but do not need to access the data after a restart. Ephemeral volumes only last the lifetime of their PODs, and are deleted when the POD stops running. Ephemeral volumes are applicable for low latency applications where limited memory size may impact performance. Kubernetes allows various kinds of ephemeral volumes for different uses, including: emptyDir, Secrets, ConfigMaps and the downwardAPI
+2. A persistent volume (PV) is the "physical" volume on the host machine that stores your persistent data. A persistent volume claim (PVC) is a request for the platform to create a PV for you, and you attach PVs to your pods via a PVC.
+
 * Network policies 
 * Auto scaling of pods based on CPU utlization using Horizantal pod autoscaler
 * Deployment strategies: https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/
