@@ -1,6 +1,13 @@
 * Kunernetes architecture
+
+![image](https://user-images.githubusercontent.com/46215433/227093320-0d78b681-7e9b-4a6b-bef4-2c8402312c71.png)
+
 * Minikube installation
-* init container and sidecar container
+* Service account:A service account provides an identity for processes that run in a Pod, and maps to a ServiceAccount object. It is used to authenticate machine level processes to get access to our Kubernetes cluster. The API server is responsible for such authentication to the processes running in the pod
+* User Account: It is used to allow us, humans, to access the given Kubernetes cluster. Any user needs to get authenticated by the API server to do so. A user account can be an admin or a developer who is trying to access the cluster level resources.
+      
+
+* init container and sidecar container : https://blog.knoldus.com/sidecar-container-vs-init-container-in-kubernetes/
 * configmap, Secrets and Custom Resource definition(CRD)
 * Different between podman and docker engine
 * How to get node external IP on to Pod?
