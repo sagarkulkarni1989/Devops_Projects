@@ -34,6 +34,25 @@ Its a software development methodology which promotes shorter development life-c
 	* Agile : Interations, Extreme programming and CI/CD 
 	* DevOps : Agile + IaaC + Observability
 
+# DevSecOps #
+DevSecOps is the practice of integrating security into a continuous integration, continuous delivery, and continuous deployment pipeline. By incorporating DevOps values into software security, security verification becomes an active, integrated part of the development process.
+Much like DevOps, DevSecOps is an organizational and technical methodology that combines project management workflows with automated IT tools. DevSecOps integrates active security audits and security testing into agile development and DevOps workflows.
+
+To implement DevSecOps, teams should: 
+
+* Introduce security throughout the software development lifecycle in order to minimize vulnerabilities in software code.
+* Ensure the entire DevOps team, including developers and operations teams, share responsibility for following security best practices.
+* Enable automated security checks at each stage of software delivery by integrating security controls, tools, and processes into the DevOps workflow.
+* With DevSecOps, security should be applied to each phase of the typical DevOps pipeline: plan, build, test, deploy, operate, and observe.
+
+![image](https://user-images.githubusercontent.com/46215433/228709156-f34d8e9d-1a92-4ba4-bd5b-359f95f24631.png)
+
+1. Plan:The plan phase is the least automated phase of DevSecOps, involving collaboration, discussion, review, and strategy of security analysis.
+	A popular planning tool for DevSecOps is IriusRisk,Jira Software etc
+2. Build: The build phase begins once developers commit code to the source repository. DevSecOps build tools focus on automated security analysis against the build output artifact. Important security practices include software component analysis, static application software testing (SAST), and unit tests. Tools can be plugged into an existing CI/CD pipeline to automate these tests.Some well-known tools to execute build phase analysis include: OWASP Dependency-Check, SonarQube, SourceClear, Retire.js, Checkmarx, and Snyk.Some of the more popular security code tools include Gerrit, Phabricator, SpotBugs, PMD, CheckStyle,
+3.Test: The test phase is triggered after a build artifact is created and successfully deployed to staging or testing environments. A comprehensive test suite takes a considerable amount of time to execute.The test phase uses dynamic application security testing (DAST) tools to detect live application flows like user authentication, authorization, SQL injection, and API-related endpoints.including BDD Automated Security Tests, JBroFuzz, Boofuzz, OWASP ZAP, Arachi, IBM AppScan
+4.Deploy:If the previous phases pass successfully, it's time to deploy the build artifact to production. The security areas of concern to address during the deploy phase are those that only happen against the live production system. For example, any differences in configuration between the production environment and the previous staging and development environments should be thoroughly reviewed. Production TLS and DRM certificates should be validated and reviewed for upcoming renewal. Configuration management tools are a key ingredient for security in the release phase, since they provide visibility into the static configuration of a dynamic infrastructure.Some popular configuration management tools include Ansible, Puppet, HashiCorp Terraform, Chef, and Docker. 
+
 
 
 ## DevOps Knowledge ##
