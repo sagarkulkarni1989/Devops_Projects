@@ -9,11 +9,17 @@
 
 
 
-##### 1. What is DevOps ####  
-##### 2. Source Code Management - GIT , GITHUB, BITBUCKET,GITLAB ####  
-##### 3. Build Tool - Maven ####
-##### 3. Code Quality/Static code analysis - SonarQube ####
-
+##### 1. What is DevOps [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/What_is_Devops) ####  
+##### 2. Source Code Management - GIT , GITHUB, BITBUCKET,GITLAB [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/GIT) ####  
+##### 3. Build Tool - Maven [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Maven) ####
+##### 4. Code Quality/Static code analysis - SonarQube [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/SonarQube) ####
+##### 5. CI/CD Tool - Jenkins [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Jenkins) ####
+##### 5. Configuration Management Tool - Ansible [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Ansible) ####
+##### 6. Containarization - Docker and Kubernetes and Package management tool: Helm [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Docker) ####
+##### 7. IaaC -Terraform [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Terraform) ####
+##### 8. Cloud -AWS  [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/AWS) ####
+##### 9. Monitoring -Prometheus and Grafana [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Prometheus&Grafana) ####
+##### 10. Securities AWS Services [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/AWS) ####
 
 ## DevOps Knowledge ##
 1. Project1: Devops project with Ansible(GIT-Jenkins-Ansible-Webserver(httpd))  Done, document pending
@@ -25,11 +31,6 @@
 4. Project7 : Setting up Promethues and Grafana for monitoring servers
 
 
-
-# Technical Stack #
-* Source code management: GIT
-* Build Tool: Maven, Gradle
-* CI/CD: Jenkins https://github.com/sagarkulkarni1989/Devops_Projects/blob/main/Technical_stack/Jenkins/README.md
 
 # Relational vs. Non-Relational Database #
 * https://www.guru99.com/nosql-tutorial.html
