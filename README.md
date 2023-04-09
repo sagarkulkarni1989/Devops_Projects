@@ -21,12 +21,9 @@
 ##### 9. Monitoring -Prometheus and Grafana [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/Prometheus&Grafana) ####
 ##### 10. Securities AWS Services [link](https://github.com/sagarkulkarni1989/Devops_Projects/tree/main/Technical_stack/AWS) ####
 
-## DevOps Knowledge ##
-1. Project1: Devops project with Ansible(GIT-Jenkins-Ansible-Webserver(httpd))  Done, document pending
-2. Project2: Devops Project with Docker  Yet to start
-3. Project3: Devops project with Kubernetes Yet to start
-1. Project4 : Continuous Integration 
-2. Project5 : Continuous Delivery on AWS(Java Application)
-3. Project6 : Kubernetes Monitoring Using Prometheus and Grafana
-4. Project7 : Setting up Promethues and Grafana for monitoring servers
+## DevOps Hands On Project ##
+1. Deploy Springboot Microservices App into Amazon EKS Cluster using Jenkins 
+2. Prometheus and Grafana Dashboard on EKS Cluster using Helm Chart 
+3. Jenkins CICD with Amazon EKS
+4. Continuous Integration 
 
